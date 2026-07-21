@@ -208,6 +208,22 @@
       "description": "Afficher l'état actuel du système et les informations de connexion"
     },
     "legend": "Légende",
+    "addNode": "Ajouter un nœud",
+    "addNodeTooltip": "Ajouter un nouveau nœud au graphe de connaissances",
+    "addNodeDialog": {
+      "title": "Ajouter un nœud",
+      "description": "Créer un nouveau nœud dans le graphe de connaissances.",
+      "nameLabel": "Nom du nœud",
+      "namePlaceholder": "ex. Enseignant",
+      "typeLabel": "Type de nœud",
+      "typePlaceholder": "ex. OCCUPATION",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Décrivez ce que représente ce nœud.",
+      "create": "Créer le nœud",
+      "requiredError": "Le nom et la description du nœud sont requis.",
+      "success": "Nœud « {{name}} » créé",
+      "failed": "Échec de la création du nœud"
+    },
     "nodeTypes": {
       "person": "Personne",
       "category": "Catégorie",

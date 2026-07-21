@@ -1,0 +1,13 @@
+services:
+  docling-serve:
+    image: ghcr.io/docling-project/docling-serve-cu130:main
+    container_name: docling-serve
+    ports:
+      - "5001:5001"
+    environment:
+      DOCLING_SERVE_ENABLE_UI: "true"
+      NVIDIA_VISIBLE_DEVICES: "all"
+      NO_PROXY: "localhost,127.0.0.1,host.docker.internal"
+      no_proxy: "localhost,127.0.0.1,host.docker.internal"
+    gpus: all
+    restart: always

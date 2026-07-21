@@ -208,6 +208,22 @@
       "description": "현재 시스템 상태 및 연결 정보 보기"
     },
     "legend": "범례",
+    "addNode": "노드 추가",
+    "addNodeTooltip": "지식 그래프에 새 노드 추가",
+    "addNodeDialog": {
+      "title": "노드 추가",
+      "description": "지식 그래프에 새 노드를 만듭니다.",
+      "nameLabel": "노드 이름",
+      "namePlaceholder": "예: 교사",
+      "typeLabel": "노드 유형",
+      "typePlaceholder": "예: OCCUPATION",
+      "descriptionLabel": "설명",
+      "descriptionPlaceholder": "이 노드가 나타내는 내용을 설명하세요.",
+      "create": "노드 만들기",
+      "requiredError": "노드 이름과 설명은 필수입니다.",
+      "success": "\"{{name}}\" 노드가 생성되었습니다",
+      "failed": "노드 생성 실패"
+    },
     "nodeTypes": {
       "person": "사람",
       "category": "카테고리",

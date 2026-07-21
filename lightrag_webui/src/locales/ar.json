@@ -208,6 +208,22 @@
       "description": "عرض حالة النظام الحالية ومعلومات الاتصال"
     },
     "legend": "المفتاح",
+    "addNode": "إضافة عقدة",
+    "addNodeTooltip": "إضافة عقدة جديدة إلى الرسم البياني المعرفي",
+    "addNodeDialog": {
+      "title": "إضافة عقدة",
+      "description": "إنشاء عقدة جديدة في الرسم البياني المعرفي.",
+      "nameLabel": "اسم العقدة",
+      "namePlaceholder": "مثال: معلم",
+      "typeLabel": "نوع العقدة",
+      "typePlaceholder": "مثال: OCCUPATION",
+      "descriptionLabel": "الوصف",
+      "descriptionPlaceholder": "صف ما تمثله هذه العقدة.",
+      "create": "إنشاء العقدة",
+      "requiredError": "اسم العقدة والوصف مطلوبان.",
+      "success": "تم إنشاء العقدة \"{{name}}\"",
+      "failed": "فشل إنشاء العقدة"
+    },
     "nodeTypes": {
       "person": "شخص",
       "category": "فئة",

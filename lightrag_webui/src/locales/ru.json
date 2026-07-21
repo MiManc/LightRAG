@@ -208,6 +208,22 @@
       "description": "Просмотр текущего статуса системы и информации о подключении"
     },
     "legend": "Легенда",
+    "addNode": "Добавить узел",
+    "addNodeTooltip": "Добавить новый узел графа знаний",
+    "addNodeDialog": {
+      "title": "Добавить узел",
+      "description": "Создать новый узел в графе знаний.",
+      "nameLabel": "Имя узла",
+      "namePlaceholder": "например: Учитель",
+      "typeLabel": "Тип узла",
+      "typePlaceholder": "например: OCCUPATION",
+      "descriptionLabel": "Описание",
+      "descriptionPlaceholder": "Опишите, что представляет этот узел.",
+      "create": "Создать узел",
+      "requiredError": "Имя и описание узла обязательны.",
+      "success": "Узел «{{name}}» создан",
+      "failed": "Не удалось создать узел"
+    },
     "nodeTypes": {
       "person": "Персона",
       "category": "Категория",

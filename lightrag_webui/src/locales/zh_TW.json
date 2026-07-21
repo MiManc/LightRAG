@@ -208,6 +208,22 @@
       "description": "查看目前系統狀態和連線資訊"
     },
     "legend": "圖例",
+    "addNode": "新增節點",
+    "addNodeTooltip": "新增一個知識圖譜節點",
+    "addNodeDialog": {
+      "title": "新增節點",
+      "description": "在知識圖譜中建立一個新的節點。",
+      "nameLabel": "節點名稱",
+      "namePlaceholder": "例如：教師",
+      "typeLabel": "節點類型",
+      "typePlaceholder": "例如：OCCUPATION",
+      "descriptionLabel": "描述",
+      "descriptionPlaceholder": "描述這個節點代表什麼。",
+      "create": "建立節點",
+      "requiredError": "節點名稱和描述不能為空。",
+      "success": "節點「{{name}}」建立成功",
+      "failed": "建立節點失敗"
+    },
     "nodeTypes": {
       "person": "人物角色",
       "category": "分類",

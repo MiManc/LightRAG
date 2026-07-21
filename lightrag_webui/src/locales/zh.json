@@ -208,6 +208,22 @@
       "description": "查看当前系统状态和连接信息"
     },
     "legend": "图例",
+    "addNode": "新增结点",
+    "addNodeTooltip": "新增一个知识图谱结点",
+    "addNodeDialog": {
+      "title": "新增结点",
+      "description": "在知识图谱中创建一个新的结点。",
+      "nameLabel": "结点名称",
+      "namePlaceholder": "例如：教师",
+      "typeLabel": "结点类型",
+      "typePlaceholder": "例如：OCCUPATION",
+      "descriptionLabel": "描述",
+      "descriptionPlaceholder": "描述这个结点代表什么。",
+      "create": "创建结点",
+      "requiredError": "结点名称和描述不能为空。",
+      "success": "结点“{{name}}”创建成功",
+      "failed": "创建结点失败"
+    },
     "nodeTypes": {
       "person": "人物角色",
       "category": "分类",

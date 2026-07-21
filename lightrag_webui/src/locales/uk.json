@@ -208,6 +208,22 @@
       "description": "Переглянути поточний статус системи та інформацію про підключення"
     },
     "legend": "Легенда",
+    "addNode": "Додати вузол",
+    "addNodeTooltip": "Додати новий вузол графа знань",
+    "addNodeDialog": {
+      "title": "Додати вузол",
+      "description": "Створити новий вузол у графі знань.",
+      "nameLabel": "Назва вузла",
+      "namePlaceholder": "наприклад: Учитель",
+      "typeLabel": "Тип вузла",
+      "typePlaceholder": "наприклад: OCCUPATION",
+      "descriptionLabel": "Опис",
+      "descriptionPlaceholder": "Опишіть, що представляє цей вузол.",
+      "create": "Створити вузол",
+      "requiredError": "Назва вузла та опис обов'язкові.",
+      "success": "Вузол «{{name}}» створено",
+      "failed": "Не вдалося створити вузол"
+    },
     "nodeTypes": {
       "person": "Особа",
       "category": "Категорія",

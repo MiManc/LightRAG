@@ -208,6 +208,22 @@
       "description": "現在のシステムステータスと接続情報を表示"
     },
     "legend": "凡例",
+    "addNode": "ノードを追加",
+    "addNodeTooltip": "知識グラフに新しいノードを追加",
+    "addNodeDialog": {
+      "title": "ノードを追加",
+      "description": "知識グラフに新しいノードを作成します。",
+      "nameLabel": "ノード名",
+      "namePlaceholder": "例: 教師",
+      "typeLabel": "ノードタイプ",
+      "typePlaceholder": "例: OCCUPATION",
+      "descriptionLabel": "説明",
+      "descriptionPlaceholder": "このノードの内容を説明します。",
+      "create": "ノードを作成",
+      "requiredError": "ノード名と説明は必須です。",
+      "success": "ノード「{{name}}」を作成しました",
+      "failed": "ノードの作成に失敗しました"
+    },
     "nodeTypes": {
       "person": "人物",
       "category": "カテゴリ",

@@ -28,3 +28,4 @@ services:
       # so the exposed server is authenticated — without it every endpoint is public.
       HOST: "0.0.0.0"
       PORT: "9621"
+    restart: always

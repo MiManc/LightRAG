@@ -208,6 +208,22 @@
       "description": "View current system status and connection information"
     },
     "legend": "Legend",
+    "addNode": "Add Node",
+    "addNodeTooltip": "Add a new knowledge graph node",
+    "addNodeDialog": {
+      "title": "Add Node",
+      "description": "Create a new node in the knowledge graph.",
+      "nameLabel": "Node name",
+      "namePlaceholder": "e.g. Teacher",
+      "typeLabel": "Node type",
+      "typePlaceholder": "e.g. OCCUPATION",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Describe what this node represents.",
+      "create": "Create Node",
+      "requiredError": "Node name and description are required.",
+      "success": "Node \"{{name}}\" created",
+      "failed": "Failed to create node"
+    },
     "nodeTypes": {
       "person": "Person",
       "category": "Category",

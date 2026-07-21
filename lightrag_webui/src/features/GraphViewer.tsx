@@ -12,6 +12,8 @@ import {
 } from 'sigma/rendering'
 import { NodeBorderProgram } from '@sigma/node-border'
 import { EdgeCurvedArrowProgram, createEdgeCurveProgram } from '@sigma/edge-curve'
+import { Plus } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 import FocusOnNode from '@/components/graph/FocusOnNode'
 import LayoutsControl from '@/components/graph/LayoutsControl'
@@ -26,11 +28,19 @@ import PropertiesView from '@/components/graph/PropertiesView'
 import SettingsDisplay from '@/components/graph/SettingsDisplay'
 import Legend from '@/components/graph/Legend'
 import LegendButton from '@/components/graph/LegendButton'
+import AddNodeDialog from '@/components/graph/AddNodeDialog'
+import Button from '@/components/ui/Button'
 
 import { useSettingsStore } from '@/stores/settings'
 import { useGraphStore } from '@/stores/graph'
 import useIsDarkMode from '@/hooks/useIsDarkMode'
-import { labelColorDarkTheme, labelColorLightTheme, edgeColorDarkTheme, EDGE_PERF_LIMIT } from '@/lib/constants'
+import {
+  labelColorDarkTheme,
+  labelColorLightTheme,
+  edgeColorDarkTheme,
+  EDGE_PERF_LIMIT,
+  controlButtonVariant
+} from '@/lib/constants'
 
 import '@react-sigma/core/lib/style.css'
 import '@react-sigma/graph-search/lib/style.css'
@@ -143,6 +153,7 @@ const GraphEvents = () => {
 }
 
 const GraphViewer = () => {
+  const { t } = useTranslation()
   const sigmaRef = useRef<any>(null)
   const prevTheme = useRef<string>('')
 
@@ -168,6 +179,7 @@ const GraphViewer = () => {
   const effectiveEdgeEvents = enableEdgeEvents && graphEdgeCount <= EDGE_PERF_LIMIT
 
   const [isThemeSwitching, setIsThemeSwitching] = useState(false)
+  const [isAddNodeDialogOpen, setIsAddNodeDialogOpen] = useState(false)
 
   // Resolve effective dark mode (handles theme === 'system' against the OS
   // preference, and stays reactive to OS color-scheme changes).
@@ -265,6 +277,16 @@ const GraphViewer = () => {
         <FocusOnNode node={autoFocusedNode} move={moveToSelectedNode} />
 
         <div className="absolute top-2 left-2 flex items-start gap-2">
+          <Button
+            variant={controlButtonVariant}
+            size="sm"
+            tooltip={t('graphPanel.addNodeTooltip')}
+            onClick={() => setIsAddNodeDialogOpen(true)}
+            className="bg-background/80 border backdrop-blur-lg"
+          >
+            <Plus />
+            {t('graphPanel.addNode')}
+          </Button>
           <GraphLabels />
           {showNodeSearchBar && !isThemeSwitching && (
             <GraphSearch
@@ -301,6 +323,10 @@ const GraphViewer = () => {
         </div> */}
 
         <SettingsDisplay />
+        <AddNodeDialog
+          isOpen={isAddNodeDialogOpen}
+          onClose={() => setIsAddNodeDialogOpen(false)}
+        />
       </SigmaContainer>
 
       {/* Loading overlay - shown for data fetch, theme switch, or layout run. */}

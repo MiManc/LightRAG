@@ -208,6 +208,22 @@
       "description": "Aktuellen Systemstatus und Verbindungsinformationen anzeigen"
     },
     "legend": "Legende",
+    "addNode": "Knoten hinzufügen",
+    "addNodeTooltip": "Einen neuen Wissensgraph-Knoten hinzufügen",
+    "addNodeDialog": {
+      "title": "Knoten hinzufügen",
+      "description": "Einen neuen Knoten im Wissensgraphen erstellen.",
+      "nameLabel": "Knotenname",
+      "namePlaceholder": "z. B. Lehrer",
+      "typeLabel": "Knotentyp",
+      "typePlaceholder": "z. B. OCCUPATION",
+      "descriptionLabel": "Beschreibung",
+      "descriptionPlaceholder": "Beschreiben Sie, wofür dieser Knoten steht.",
+      "create": "Knoten erstellen",
+      "requiredError": "Knotenname und Beschreibung sind erforderlich.",
+      "success": "Knoten „{{name}}“ erstellt",
+      "failed": "Knoten konnte nicht erstellt werden"
+    },
     "nodeTypes": {
       "person": "Person",
       "category": "Kategorie",

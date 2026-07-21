@@ -25,6 +25,12 @@ export type LightragGraphType = {
   edges: LightragEdgeType[]
 }
 
+export type EntityCreateResponse = {
+  status: string
+  message: string
+  data: Record<string, any>
+}
+
 export type LightragQueueStatus = {
   available: boolean
   queue_name?: string
@@ -1024,6 +1030,23 @@ export const loginToServer = async (username: string, password: string): Promise
   });
 
   return response.data;
+}
+
+/**
+ * Creates a new entity node in the knowledge graph
+ * @param entityName The unique entity name
+ * @param entityData Dictionary containing entity attributes
+ * @returns Promise with the created entity information
+ */
+export const createEntity = async (
+  entityName: string,
+  entityData: Record<string, any>
+): Promise<EntityCreateResponse> => {
+  const response = await axiosInstance.post('/graph/entity/create', {
+    entity_name: entityName,
+    entity_data: entityData
+  })
+  return response.data
 }
 
 /**

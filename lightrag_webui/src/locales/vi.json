@@ -208,6 +208,22 @@
       "description": "Xem trạng thái hệ thống hiện tại và thông tin kết nối"
     },
     "legend": "Chú thích",
+    "addNode": "Thêm nút",
+    "addNodeTooltip": "Thêm nút mới vào đồ thị tri thức",
+    "addNodeDialog": {
+      "title": "Thêm nút",
+      "description": "Tạo một nút mới trong đồ thị tri thức.",
+      "nameLabel": "Tên nút",
+      "namePlaceholder": "ví dụ: Giáo viên",
+      "typeLabel": "Loại nút",
+      "typePlaceholder": "ví dụ: OCCUPATION",
+      "descriptionLabel": "Mô tả",
+      "descriptionPlaceholder": "Mô tả nút này đại diện cho điều gì.",
+      "create": "Tạo nút",
+      "requiredError": "Tên nút và mô tả là bắt buộc.",
+      "success": "Đã tạo nút \"{{name}}\"",
+      "failed": "Không thể tạo nút"
+    },
     "nodeTypes": {
       "person": "Người",
       "category": "Danh Mục",
